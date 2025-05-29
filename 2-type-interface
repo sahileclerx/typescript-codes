@@ -1,0 +1,28 @@
+// Type interface
+// TypeScript is smart — it can infer types automatically even when you don’t explicitly write them.
+// Automatically guessing type is a feature in typescript which is known as Type Interface
+
+let city = "Paris"; //string
+let temperature = 23; //number
+let isCloudy = false; //boolean
+
+let items = [1, "hello", true]; //(string | number | boolean)
+
+function square(x: number) { //boolean
+  return x * x;
+}
+
+function sayHello() { //string
+  return "Hi!";
+}
+
+function greet(name: string) {
+  return "Hello " + name;
+}
+
+let person = { //{name: string, age: number, isEmployed: boolean,}
+  name: "Alice",
+  age: 30,
+  isEmployed: true,
+};
+
